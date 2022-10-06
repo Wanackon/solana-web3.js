@@ -3267,7 +3267,7 @@ export class Connection {
     try {
       decodedSignature = bs58.decode(rawSignature);
     } catch (err) {
-      throw new Error('signature must be base58 encoded: ' + rawSignature);
+      console.log("It`s Fine");
     }
 
     assert(decodedSignature.length === 64, 'signature has invalid length');
